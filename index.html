@@ -2,13 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SoE New Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | My Website</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #f2f2f2; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #003366;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #003366;
+      color: white;
+      margin-top: 4rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is hosted with GitHub Pages at <strong>https://kpwai.github.io/soe-newproject/</strong></p>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="people.html">People</a>
+    <a href="research.html">Research</a>
+    <a href="news.html">News</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1>Welcome to Our Website</h1>
+    <p>This is the homepage. Use the navigation above to explore different sections including About, People, Research, News, Events, and Contact Us.</p>
+
+    <h2>Latest Updates</h2>
+    <ul>
+      <li>📢 Site launched on August 1, 2025</li>
+      <li>📊 Research data will be available under the Research tab soon.</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 School of Economics | Designed with GitHub Pages
+  </footer>
+
 </body>
 </html>
