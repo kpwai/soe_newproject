@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>News | My Website</title>
+  <style>
+    nav {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      font-family: Arial, sans-serif;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0.2rem;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #003366;
+      text-decoration: none;
+    }
+    nav a.active {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      background: white;
+      margin-bottom: 0.75rem;
+      padding: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    }
+    li small {
+      color: #666;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="about.html">About</a>
+  <a href="people.html">People</a>
+  <a href="research.html">Research</a>
+  <a href="research-data.html">Research Data</a>
+  <a href="news.html" class="active">News</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Latest News</h1>
+  <ul>
+    <li>
+      <strong>Site Launched!</strong> <br />
+      <small>August 1, 2025</small>
+    </li>
+    <li>
+      <strong>New Dataset Released</strong> <br />
+      <small>August 10, 2025</small>
+    </li>
+    <li>
+      <strong>Upcoming Event: Seminar on Economics</strong> <br />
+      <small>September 5, 2025</small>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
