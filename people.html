@@ -4,14 +4,21 @@
   <meta charset="UTF-8" />
   <title>People | My Website</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
     nav {
       background-color: #003366;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       padding: 1rem 0;
-      font-family: Arial, sans-serif;
     }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -21,29 +28,45 @@
       border-radius: 4px 4px 0 0;
       transition: background-color 0.3s, color 0.3s;
     }
-    nav a:hover {
-      background-color: #ffcc00;
-      color: #003366;
-      text-decoration: none;
-    }
+
+    nav a:hover,
     nav a.active {
       background-color: #ffcc00;
       color: #003366;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 2rem auto;
       padding: 1rem;
-      background: #f8f9fa;
+      background: #ffffff;
       border-radius: 8px;
-      font-family: Arial, sans-serif;
     }
-    .team-member {
-      background: white;
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 5px;
+    }
+
+    .person {
+      margin: 1rem 0;
+    }
+
+    .org-chart {
+      margin-top: 2rem;
       padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      background: #eef3f9;
+      border-left: 4px solid #003366;
+    }
+
+    .org-chart ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+
+    .org-chart li {
+      margin: 0.5rem 0;
     }
   </style>
 </head>
@@ -53,7 +76,7 @@
   <a href="about.html">About</a>
   <a href="people.html" class="active">People</a>
   <a href="research.html">Research</a>
-  <a href="researchdata.html">Research Data</a>
+  <a href="research-data.html">Research Data</a>
   <a href="news.html">News</a>
   <a href="events.html">Events</a>
   <a href="contact.html">Contact</a>
@@ -61,20 +84,51 @@
 
 <div class="container">
   <h1>Our People</h1>
-  
-  <div class="team-member">
-    <h2>Alice Tan</h2>
-    <p>Lead Researcher</p>
+
+  <h2>Faculty Members</h2>
+  <div class="person">
+    <strong>Prof. Alice Tan</strong><br>
+    Dean, School of Economics<br>
+    <em>Research: Development Economics, Policy Impact</em>
+  </div>
+  <div class="person">
+    <strong>Dr. Brian Lim</strong><br>
+    Associate Professor<br>
+    <em>Research: Industrial Organization, Applied Micro</em>
   </div>
 
-  <div class="team-member">
-    <h2>John Lee</h2>
-    <p>Data Scientist</p>
+  <h2>Research Staff</h2>
+  <div class="person">
+    <strong>Ms. Cheryl Ng</strong><br>
+    Senior Research Associate<br>
+    <em>Project Management & Data Analysis</em>
+  </div>
+  <div class="person">
+    <strong>Mr. Daniel Wong</strong><br>
+    Research Assistant<br>
+    <em>Firm-level Productivity and IO Linkages</em>
   </div>
 
-  <div class="team-member">
-    <h2>Mary Wong</h2>
-    <p>Economist</p>
+  <h2>Organizational Structure</h2>
+  <div class="org-chart">
+    <ul>
+      <li><strong>Dean</strong> – Prof. Alice Tan
+        <ul>
+          <li><strong>Faculty</strong>
+            <ul>
+              <li>Dr. Brian Lim</li>
+              <!-- Add more faculty -->
+            </ul>
+          </li>
+          <li><strong>Research Team</strong>
+            <ul>
+              <li>Ms. Cheryl Ng (Senior Associate)</li>
+              <li>Mr. Daniel Wong (RA)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </div>
 
