@@ -83,6 +83,71 @@
       margin: 0;
       font-size: 0.95rem;
     }
+
+    /* Org chart styles */
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.org-chart ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid #ccc;
+  height: 20px;
+}
+
+.org-chart li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+.org-chart li::before,
+.org-chart li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  border-top: 2px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+
+.org-chart li::before {
+  left: -50%;
+  border-right: 2px solid #ccc;
+}
+
+.org-chart li::after {
+  right: -50%;
+  border-left: 2px solid #ccc;
+}
+
+.org-chart li:only-child::before,
+.org-chart li:only-child::after {
+  display: none;
+}
+
+.org-chart li:only-child {
+  padding-top: 0;
+}
+
+.org-box {
+  padding: 10px 20px;
+  border: 2px solid #003366;
+  display: inline-block;
+  background-color: #fdfdfd;
+  color: #003366;
+  font-weight: bold;
+  border-radius: 5px;
+  min-width: 180px;
+}
   </style>
 </head>
 <body>
@@ -129,7 +194,7 @@
       <p><em>Project Management & Data Analysis</em></p>
     </div>
   </div>
-
+  
   <div class="person-row">
     <img src="images/daniel-wong.jpg" alt="Mr. Daniel Wong">
     <div class="person-info">
@@ -138,6 +203,25 @@
       <p><em>Firm-level Productivity and IO Linkages</em></p>
     </div>
   </div>
+</div>
+
+<h2 class="section-title">Organization Structure</h2>
+
+<div class="org-chart">
+  <ul>
+    <li>
+      <div class="org-box">Dean: Prof. Alice Tan</div>
+      <ul>
+        <li>
+          <div class="org-box">Head of Research: Dr. Brian Lim</div>
+          <ul>
+            <li><div class="org-box">Senior Researcher: Ms. Cheryl Ng</div></li>
+            <li><div class="org-box">RA: Mr. Daniel Wong</div></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 </body>
