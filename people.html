@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>People | My Website</title>
+  <style>
+    nav {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+      font-family: Arial, sans-serif;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0.2rem;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #003366;
+      text-decoration: none;
+    }
+    nav a.active {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+    }
+    .team-member {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="about.html">About</a>
+  <a href="people.html" class="active">People</a>
+  <a href="research.html">Research</a>
+  <a href="research-data.html">Research Data</a>
+  <a href="news.html">News</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Our People</h1>
+  
+  <div class="team-member">
+    <h2>Alice Tan</h2>
+    <p>Lead Researcher</p>
+  </div>
+
+  <div class="team-member">
+    <h2>John Lee</h2>
+    <p>Data Scientist</p>
+  </div>
+
+  <div class="team-member">
+    <h2>Mary Wong</h2>
+    <p>Economist</p>
+  </div>
+</div>
+
+</body>
+</html>
