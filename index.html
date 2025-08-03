@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Singapore Trade Shock Research Lab </title>
+  <title>Home | School of Economic Trade Centre</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -15,24 +15,48 @@
     /* Navigation Bar */
     nav {
       background-color: #003366;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
-    nav a {
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
+      margin: 0 0.75rem;
       font-weight: bold;
       font-size: 1rem;
       transition: color 0.2s;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
       color: #ffcc00;
       text-decoration: underline;
+    }
+
+    .banner {
+      width: 100%;
+      height: 300px;
+      background-image: url('images/SoE1.jpg');
+      background-size: cover;
+      background-position: center;
     }
 
     .container {
@@ -51,25 +75,39 @@
       color: white;
       margin-top: 4rem;
     }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="people2.html">People</a>
-    <a href="research.html">Research</a>
-    <a href="researchdata.html">Data</a>
-    <a href="news.html">News</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact Us</a>
+    <div class="nav-left">
+      <img src="images/soesmulogo.png" alt="School Logo" />
+      <span style="color: white; font-size: 1.2rem; font-weight: bold;">School of Economic Trade Centre</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="people2.html">People</a>
+      <a href="research.html">Research</a>
+      <a href="researchdata.html">Data</a>
+      <a href="news.html">News</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
   </nav>
+
+  <!-- Banner Image -->
+  <div class="banner"></div>
 
   <!-- Page Content -->
   <div class="container">
-    <h1>Welcome to Singapore Trade Shock Research Lab</h1>
+    <h1>Welcome to School of Economic Trade Centre</h1>
     <p>This is the homepage of Singapore Trade Shock Research Lab. Use the navigation above to explore different sections including About, People, Research, Data, News, Events, and Contact Us.</p>
 
     <h2>Latest Updates</h2>
@@ -81,7 +119,8 @@
 
   <!-- Footer -->
   <footer>
-  &copy; 2025 School of Economics | Designed and hosted on <a href="https://pages.github.com/" style="color: #ffcc00; text-decoration: none;" target="_blank">GitHub Pages</a>
+    &copy; 2025 School of Economics | Designed and hosted on 
+    <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
   </footer>
 
 </body>
