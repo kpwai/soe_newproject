@@ -2,15 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About | School of Economics Trade Centre</title>
   <style>
+    body {
+      margin: 0;
+      background-color: #fff;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
     p {
-      font-family: 'Georgia', serif;
+      font-family: Georgia, serif;
       font-size: 18px;
       line-height: 1.6;
+      max-width: 700px;
+      margin: 1.5rem auto;
       color: #333333;
-      /* max-width: 700px;  Optional: limit line length for readability */
-      margin: 1rem auto; /* Center with vertical spacing */
+    }
+    p a {
+      color: #003366;
+      text-decoration: underline;
+    }
+    p a:hover,
+    p a:focus {
+      color: #ffcc00;
+      text-decoration: none;
+      outline: none;
     }
     nav {
       background-color: #003366;
@@ -24,15 +41,16 @@
       color: white;
       text-decoration: none;
       padding: 0.75rem 1.5rem;
-      margin: 0 0.2rem;
+      margin: 0 0.3rem;
       font-weight: bold;
       border-radius: 4px 4px 0 0;
       transition: background-color 0.3s, color 0.3s;
     }
-    nav a:hover {
+    nav a:hover,
+    nav a:focus {
       background-color: #ffcc00;
       color: #003366;
-      text-decoration: none;
+      outline: none;
     }
     nav a.active {
       background-color: #ffcc00;
@@ -41,10 +59,17 @@
     .container {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1rem;
+      padding: 1.5rem 2rem;
       background: #f8f9fa;
       border-radius: 8px;
-      font-family: Arial, sans-serif;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    h1 {
+      font-family: 'Georgia', serif;
+      font-weight: normal;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
@@ -61,9 +86,13 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<div class="container">
+<div class="container" role="main">
   <h1>About Us</h1>
-  <p>The Trade Centre was founded by Associate Professor of Economics <a href="https://faculty.smu.edu.sg/profile/chang-pao-li-1201" target="_blank" rel="noopener noreferrer">Chang Pao-Li</a> to tackle the growing complexities of Singapore’s role in global trade. Drawing on deep expertise in firm-to-firm linkages and economic networks, the Centre leads research into how multinational enterprises adapt amid rising trade tensions and shifting production patterns. By mapping these intricate networks and analyzing how global shocks ripple through Singapore’s trade ecosystem, the Centre provides critical insights that support economic resilience, inform policy decisions, and promote sustainable growth in an interconnected world.</p>
+  <p>
+    The Trade Centre was founded by Associate Professor of Economics 
+    <a href="https://faculty.smu.edu.sg/profile/chang-pao-li-1201" target="_blank" rel="noopener noreferrer">Chang Pao-Li</a> 
+    to tackle the growing complexities of Singapore’s role in global trade. Drawing on deep expertise in firm-to-firm linkages and economic networks, the Centre leads research into how multinational enterprises adapt amid rising trade tensions and shifting production patterns. By mapping these intricate networks and analyzing how global shocks ripple through Singapore’s trade ecosystem, the Centre provides critical insights that support economic resilience, inform policy decisions, and promote sustainable growth in an interconnected world.
+  </p>
 </div>
 
 </body>
