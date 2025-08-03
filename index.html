@@ -53,26 +53,24 @@
     }
 
 .banner {
+  position: relative;
   width: 100%;
-  padding-top: 40%; /* Adjust this % based on your image aspect ratio (Height/Width * 100) */
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  display: block;
+  padding-top: 40%; /* Aspect Ratio (height / width * 100) */
+}
+
+.banner {
   background-image: url('images/SoE1.jpg');
-  background-size: contain; /* Show full image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center image */
-  background-color: #f0f0f0; /* Fallback background */
-  background-origin: content-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f0f0f0;
 }
-
-.container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-
 
     footer {
       text-align: center;
