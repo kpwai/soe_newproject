@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | School of Economic Trade Centre</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+    }
+    nav {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0.2rem;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+    nav a.active {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #ffffff;
+      border-radius: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .contact-info, .contact-form {
+      flex: 1 1 300px;
+    }
+    .contact-info h2, .contact-form h2 {
+      color: #003366;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .contact-info p {
+      line-height: 1.6;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+    button {
+      width: 120px;
+      padding: 0.5rem;
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+    .map {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="people.html">People</a>
+  <a href="research.html">Research</a>
+  <a href="researchdata.html">Research Data</a>
+  <a href="news.html">News</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html" class="active">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="contact-info">
+    <h2>Contact Details</h2>
+    <p><strong>School of Economic Trade Centre</strong></p>
+    <p>90 Stamford Road, Level 5,<br>Singapore 178903</p>
+    <p><strong>Tel:</strong> +65 6808 1234</p>
+    <p><strong>Email:</strong> <a href="mailto:ecoenquiries@smu.edu.sg">ecoenquiries@smu.edu.sg</a></p>
+    <p><strong>Office Hours:</strong><br>
+       Monday to Friday: 8:30am – 5:45pm<br>
+       Closed on Weekends & Public Holidays</p>
+  </div>
+
+  <div class="contact-form">
+    <h2>Send us a Message</h2>
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.882000159381!2d103.8483283147666!3d1.2967629621197784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199e3d635abd%3A0x6e6c31b42364c3f1!2sSingapore%20Management%20University!5e0!3m2!1sen!2ssg!4v1662621003249!5m2!1sen!2ssg" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+</body>
+</html>
