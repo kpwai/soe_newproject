@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>People | School of Economics Trade Centre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    nav {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      margin: 0 0.2rem;
+      font-weight: bold;
+      border-radius: 4px 4px 0 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #ffffff;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #003366;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #ffcc00;
+      padding-bottom: 5px;
+      margin-top: 2rem;
+    }
+
+    .people-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 1rem;
+    }
+
+    .person-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .person-card:hover {
+      transform: scale(1.05);
+    }
+
+    .person-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .person-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .person-card h3 {
+      margin: 0 0 0.5rem;
+      color: #003366;
+      font-size: 1.1rem;
+    }
+
+    .person-card p {
+      font-size: 0.95rem;
+      margin: 0.3rem 0;
+      color: #333;
+    }
+
+    .person-card a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .person-card a:hover {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="people_new.html" class="active">People</a>
+  <a href="research.html">Research</a>
+  <a href="researchdata.html">Research Data</a>
+  <a href="news.html">News</a>
+  <a href="events.html">Events</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Our People</h1>
+  <p>The research team comprises faculty members from SMU’s School of Economics and international experts with strong expertise in production networks and global value chains.</p>
+
+  <h2 class="section-title">Faculty Members from SMU</h2>
+  <div class="people-grid">
+    <div class="person-card">
+      <img src="images/plchang.jpg" alt="Prof. Pao-Li CHANG">
+      <h3><a href="https://faculty.smu.edu.sg/profile/chang-pao-li-1201" target="_blank">CHANG Pao Li</a></h3>
+      <p>Lead PI</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/linma.jpg" alt="Prof. MA Lin">
+      <h3><a href="https://faculty.smu.edu.sg/profile/ma-lin-5836" target="_blank">MA Lin</a></h3>
+      <p>Co-PI</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/lijing.jpg" alt="Prof. Jing LI">
+      <h3><a href="https://economics.smu.edu.sg/faculty/profile/1906/li-jing" target="_blank">Jing LI</a></h3>
+      <p>Co-PI</p>
+    </div>
+  </div>
+
+  <h2 class="section-title">External Collaborators</h2>
+  <div class="people-grid">
+    <div class="person-card">
+      <img src="images/1.jpg" alt="Daniel XU">
+      <h3>Daniel XU</h3>
+    </div>
+
+    <div class="person-card">
+      <img src="images/2.jpg" alt="Ayumu Ken KIKKAWA">
+      <h3>Ayumu Ken KIKKAWA</h3>
+    </div>
+
+    <div class="person-card">
+      <img src="images/2.jpg" alt="Yuhei MIYAUCHI">
+      <h3>Yuhei MIYAUCHI</h3>
+    </div>
+  </div>
+
+  <h2 class="section-title">Research Staff</h2>
+  <div class="people-grid">
+    <div class="person-card">
+      <img src="images/kpw2.jpg" alt="Khaing Phyo Wai">
+      <h3>Khaing Phyo Wai</h3>
+      <p>Data Scientist</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/daniel-wong.jpg" alt="HO, Ngai-Lam">
+      <h3>HO, Ngai-Lam</h3>
+      <p>Data Scientist</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/BUChunya.jpg" alt="BU Chunya">
+      <h3>BU Chunya</h3>
+      <p>Research Fellow</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/LIWenze.jpg" alt="LI Wenze">
+      <h3>LI Wenze</h3>
+      <p>Research Fellow</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/YosukeHigashiyama.jpg" alt="Yosuke Higashiyama">
+      <h3>Yosuke Higashiyama</h3>
+      <p>Research Fellow</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/QiuguHE.jpg" alt="Qiugu HE">
+      <h3>Qiugu HE</h3>
+      <p>Research Fellow</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/NITong.jpg" alt="NI Tong">
+      <h3>NI Tong</h3>
+      <p>Research Assistant</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/CHENRuoqing.jpg" alt="CHEN Ruoqing">
+      <h3>CHEN Ruoqing</h3>
+      <p>Research Assistant</p>
+    </div>
+
+    <div class="person-card">
+      <img src="images/GregoryGWEEYongLoong.jpg" alt="Gregory GWEE Yong Loong">
+      <h3>Gregory GWEE Yong Loong</h3>
+      <p>Research Assistant</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
