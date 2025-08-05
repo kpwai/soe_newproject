@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | School of Economic Trade Centre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 80px;
+      margin-right: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.75rem;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    .banner {
+      width: 100%;
+      height: 400px;
+      background-image: url('images/SoE1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    .welcome {
+      font-size: 1rem;
+    }
+
+    .news {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .news h2 {
+      font-size: 1.2rem;
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .news ul {
+      padding-left: 1rem;
+    }
+
+    .news li {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #003366;
+      color: white;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .news-ticker {
+  overflow: hidden;
+  height: 2rem;
+  position: relative;
+}
+
+.news-ticker ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  animation: ticker 12s linear infinite;
+}
+
+.news-ticker li {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes ticker {
+  0%   { top: 0; }
+  20%  { top: 0; }
+  25%  { top: -2rem; }
+  45%  { top: -2rem; }
+  50%  { top: -4rem; }
+  70%  { top: -4rem; }
+  75%  { top: -6rem; }
+  95%  { top: -6rem; }
+  100% { top: 0; }
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="images/smusoe-logo.svg" alt="School Logo">
+      <span style="color: white; font-size: 1.2rem; font-weight: bold;">School of Economic Trade Centre</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="people.html">People</a>
+      <a href="research.html">Research</a>
+      <a href="researchdata.html">Data</a>
+      <a href="news.html">News</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+
+  <div class="container">
+    <!-- Left Column: Welcome Message -->
+    <div class="welcome">
+      <h1>Welcome to School of Economic Trade Centre</h1>
+      <p>This is the homepage of Singapore Trade Shock Research Lab. Use the navigation above to explore different sections including About, People, Research, Data, News, Events, and Contact Us.</p>
+    </div>
+
+    <!-- Right Column: Latest News -->
+<div class="news">
+  <h2>Latest News</h2>
+  <div class="news-ticker">
+    <ul>
+      <li>📢 Site launched on August 1, 2025</li>
+      <li>📊 Research data will be available under the Data tab soon.</li>
+      <li>📅 Upcoming seminar: Global Trade Impacts (September 2025)</li>
+      <li>🚀 New publication on Trade Network Shocks released.</li>
+    </ul>
+  </div>
+</div>
+
+  <footer>
+    &copy; 2025 School of Economics | Designed and hosted on 
+    <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+  </footer>
+
+</body>
+</html>
