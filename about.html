@@ -2,98 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | School of Economics Trade Centre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | School of Economic Trade Centre</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
       margin: 0;
-      background-color: #fff;
-      color: #333;
       font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
     }
-    p {
-      font-family: Georgia, serif;
-      font-size: 18px;
-      line-height: 1.6;
-      /*max-width: 700px;*/
-      margin: 1.5rem auto;
-      color: #333333;
-    }
-    p a {
-      color: #003366;
-      text-decoration: underline;
-    }
-    p a:hover,
-    p a:focus {
-      color: #ffcc00;
-      text-decoration: none;
-      outline: none;
-    }
+
     nav {
       background-color: #003366;
+      padding: 0.5rem 1rem;
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
       flex-wrap: wrap;
-      padding: 1rem 0;
-      font-family: Arial, sans-serif;
     }
-    nav a {
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 80px;
+      margin-right: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
       color: white;
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      margin: 0 0.3rem;
+      margin: 0 0.75rem;
       font-weight: bold;
-      border-radius: 4px 4px 0 0;
-      transition: background-color 0.3s, color 0.3s;
+      font-size: 1rem;
+      transition: color 0.2s;
     }
-    nav a:hover,
-    nav a:focus {
-      background-color: #ffcc00;
-      color: #003366;
-      outline: none;
+
+    .nav-links a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
     }
-    nav a.active {
-      background-color: #ffcc00;
-      color: #003366;
+
+    .banner {
+      width: 100%;
+      height: 300px;
+      background-image: url('images/SoE1.jpg');
+      background-size: cover;
+      background-position: center;
     }
+
     .container {
-      max-width: 900px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
       margin: 2rem auto;
-      padding: 1.5rem 2rem;
-      background: #f8f9fa;
+      padding: 1rem;
+      background: white;
       border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      flex: 1 0 auto;
     }
-    h1 {
-      font-family: 'Georgia', serif;
-      font-weight: normal;
+
+    .welcome h1 {
+      margin-top: 0;
       color: #003366;
-      text-align: left;
-      margin-bottom: 1rem;
+    }
+
+    .news {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .news h2 {
+      font-size: 1.2rem;
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .news-ticker {
+      overflow: hidden;
+      height: 2rem;
+      position: relative;
+    }
+
+    .news-ticker ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      animation: ticker 12s linear infinite;
+    }
+
+    .news-ticker li {
+      height: 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    @keyframes ticker {
+      0%   { top: 0; }
+      20%  { top: 0; }
+      25%  { top: -2rem; }
+      45%  { top: -2rem; }
+      50%  { top: -4rem; }
+      70%  { top: -4rem; }
+      75%  { top: -6rem; }
+      95%  { top: -6rem; }
+      100% { top: 0; }
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 1.5rem 0;
+      background: #003366;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="people.html">People</a>
-  <a href="research.html">Research</a>
-  <a href="researchdata.html">Research Data</a>
-  <a href="news.html">News</a>
-  <a href="events.html">Events</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <nav>
+    <div class="nav-left">
+      <img src="images/smusoe-logo.svg" alt="School Logo">
+      <span style="color: white; font-size: 1.2rem; font-weight: bold;">School of Economic Trade Centre</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="people.html">People</a>
+      <a href="research.html">Research</a>
+      <a href="researchdata.html">Data</a>
+      <a href="news.html">News</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
 
-<div class="container" role="main">
-  <h1>About Us</h1>
-  <p>
-    The Trade Centre was founded by Associate Professor of Economics 
-    <a href="https://faculty.smu.edu.sg/profile/chang-pao-li-1201" target="_blank" rel="noopener noreferrer">Chang Pao-Li</a> 
-    to tackle the growing complexities of Singapore’s role in global trade. Drawing on deep expertise in firm-to-firm linkages and economic networks, the Centre leads research into how multinational enterprises adapt amid rising trade tensions and shifting production patterns. By mapping these intricate networks and analyzing how global shocks ripple through Singapore’s trade ecosystem, the Centre provides critical insights that support economic resilience, inform policy decisions, and promote sustainable growth in an interconnected world.
-  </p>
-</div>
+  <div class="banner"></div>
+
+  <div class="container">
+    <!-- Left Column: Welcome Message -->
+    <div class="welcome">
+      <h1>Welcome to School of Economic Trade Centre</h1>
+      <p>This is the homepage of Singapore Trade Shock Research Lab. Use the navigation above to explore different sections including About, People, Research, Data, News, Events, and Contact Us.</p>
+    </div>
+
+    <!-- Right Column: Latest News -->
+    <div class="news">
+      <h2>Latest News</h2>
+      <div class="news-ticker">
+        <ul>
+          <li>📢 Site launched on August 1, 2025</li>
+          <li>📊 Research data will be available under the Data tab soon.</li>
+          <li>📅 Upcoming seminar: Global Trade Impacts (September 2025)</li>
+          <li>🚀 New publication on Trade Network Shocks released.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 School of Economics | Designed and hosted on 
+    <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+  </footer>
 
 </body>
 </html>
