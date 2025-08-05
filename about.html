@@ -13,9 +13,9 @@
       height: 100%;
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
       display: flex;
       flex-direction: column;
+      background-color: #f8f9fa;
     }
 
     nav {
@@ -69,11 +69,12 @@
       grid-template-columns: 2fr 1fr;
       gap: 2rem;
       max-width: 1200px;
+      width: 100%;
       margin: 2rem auto;
       padding: 1rem;
       background: white;
       border-radius: 8px;
-      flex: 1 0 auto;
+      flex: 1 0 auto; /* Makes container grow to fill space */
     }
 
     .welcome h1 {
@@ -132,7 +133,7 @@
       padding: 1.5rem 0;
       background: #003366;
       color: white;
-      flex-shrink: 0;
+      flex-shrink: 0; /* Prevent shrinking */
     }
 
     footer a {
